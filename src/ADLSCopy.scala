@@ -17,3 +17,16 @@ object ADLSCopy {
  
   }
 }
+
+ def copyasync(){
+     
+   val sasToken = "";
+   val token = "https://tstorage2345.blob.core.windows.net/?sv=" ;
+   val blobServiceClient = new BlobServiceClientBuilder().endpoint(token).buildAsyncClient(); 
+   
+   val containerClient = blobServiceClient.getBlobContainerAsyncClient("tarun23")
+   val blobClient = containerClient.getBlobAsyncClient("testing.txt")
+   val newBlobClient = containerClient.getBlobAsyncClient("b/testingycvx.txt")
+   newBlobClient.copyFromUrl(blobClient.getBlobUrl() + "?" + sasToken);
+   println("done...")
+   }
