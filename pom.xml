@@ -2,8 +2,8 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.tarun</groupId>
-	<artifactId>azure-scala</artifactId>
+	<groupId>TestCosmodb</groupId>
+	<artifactId>WordCount</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
@@ -63,11 +63,46 @@
 			<artifactId>jackson-datatype-jsr310</artifactId>
 			<version>2.13.3</version>
 		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/io.projectreactor/reactor-core -->
+		<dependency>
+			<groupId>io.projectreactor</groupId>
+			<artifactId>reactor-core</artifactId>
+			<version>3.4.18</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/com.azure/azure-data-tables -->
 		<dependency>
 			<groupId>com.azure</groupId>
 			<artifactId>azure-data-tables</artifactId>
 			<version>12.2.2</version>
 		</dependency>
+		<dependency>
+			<groupId>com.azure</groupId>
+			<artifactId>azure-core</artifactId>
+			<version>1.28.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.azure</groupId>
+			<artifactId>azure-data-tables</artifactId>
+			<version>12.2.2</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.azure/azure-cosmos -->
+		<dependency>
+			<groupId>com.azure</groupId>
+			<artifactId>azure-cosmos</artifactId>
+			<version>4.31.0</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.module/jackson-module-scala -->
+		<dependency>
+			<groupId>com.fasterxml.jackson.module</groupId>
+			<artifactId>jackson-module-scala_2.12</artifactId>
+			<version>2.13.3</version>
+		</dependency>
+
+
+
+
 	</dependencies>
 	<build>
 		<sourceDirectory>src</sourceDirectory>
